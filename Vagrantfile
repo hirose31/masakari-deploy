@@ -29,7 +29,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Every Vagrant virtual environment requires a box to build off of.
   #config.vm.box = "base"
-  config.vm.box = "ubuntu/trusty64"
+#  config.vm.box = "ubuntu/trusty64"
+  config.vm.box = "hirose31-ubuntu-14.04"
   # Select centos/7 box to build masakari with centOS 7
   # config.vm.box = "centos/7"
   # WIP, experimental: ubuntu/vivid64
