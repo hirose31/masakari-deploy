@@ -186,7 +186,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     controller.vm.network "forwarded_port", id: "ssh", guest: 22, host: 2260
     controller.vm.network "private_network", ip: "192.168.50.10"
     controller.vm.provider "virtualbox" do |vb|
-      vb.customize ["modifyvm", :id, "--memory", "8192", "--cpus", "4", "--ioapic", "on"]
+      vb.customize ["modifyvm", :id, "--memory", "2048", "--cpus", "4", "--ioapic", "on"]
     end
     controller.vm.provision "chef_solo" do |chef|
       # run vagrant as
